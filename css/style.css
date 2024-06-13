@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --orange-brown: #b66d2d;
+    --peach: #ffcda1;
+    --deep-saffron: #ff9933;
+    --champagne: #f7e7ce;
+    --red-orange: #ff5349;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+/* ------------------ FIM DAS FORMATAÇÕES ------------------ */
+
+/* ------------------ NAVBAR ------------------ */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: 2px solid var(--deep-saffron);
+    align-items: center;
+}
+
+.icon ion-icon {
+    font-size: 4rem;
+    color: var(--orange-brown);
+    margin-right: 16px  ;
+}
+
+.title {
+    font-size: 2.25rem;
+    color: var(--orange-brown);
+}
+
+/* ------------------ SECTION sweepstakes------------------ */
+
+/* card 1 */
+
+.sweepstakes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../assets/img/bg-amigoSecreto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 35%;
+    line-height: 50px;
+    border-radius: 16px;
+    margin-top: 30px;
+    padding: 8% 0;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+input {
+    width: 25vw;
+    height: 6vh;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    border: 1px solid var(--deep-saffron);
+    margin-top: 16px;
+}
+
+.buttons {
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.btn {
+    padding: 5px 15px;
+    border-radius: 16px;
+    margin: 24px 10px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    box-shadow: 4px 4px 8px #000;
+}
+
+.add {
+    background-color: var(--peach);
+}
+
+.add:hover {
+    background-color: #fabf8c;
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+.srt {
+    background-color: var(--deep-saffron);
+}
+
+.srt:hover {
+    background-color: #dd7d1c;
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+.rst {
+    background-color: var(--red-orange);
+}
+
+.rst:hover {
+    background-color: #f33e35;
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+.text-box p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.name-box {
+    width: 25vw;
+    height: 6vh;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    border: 1px solid var(--deep-saffron);
+}
+
+/* card 2 */
+
+.subtitle {
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+
+.list_sweepstakes {
+    border: 1px solid var(--deep-saffron);
+    margin: 0 auto;
+    width: 25vw;
+}
+
+.list_sweepstakes li {
+    list-style: none;
+}
