@@ -29,7 +29,7 @@ body {
 .icon ion-icon {
     font-size: 4rem;
     color: var(--orange-brown);
-    margin-right: 16px  ;
+    margin-right: 16px;
 }
 
 .title {
@@ -94,6 +94,7 @@ input {
     font-weight: 500;
     font-size: 1.1rem;
     box-shadow: 4px 4px 8px #000;
+    cursor: pointer;
 }
 
 .add {
@@ -138,6 +139,19 @@ input {
     margin: 0 auto;
     font-size: 1.15rem;
     border: 1px solid var(--deep-saffron);
+}
+
+.not {
+    visibility: hidden;
+    text-decoration: none;
+}
+
+.error input{
+    border-color: #ff3b25;
+}
+.error .not{
+    color: #ff3b25;
+    visibility: visible;
 }
 
 /* card 2 */
