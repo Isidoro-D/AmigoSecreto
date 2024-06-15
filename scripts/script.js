@@ -6,10 +6,19 @@ const username = document.querySelector(".name");
 const listBox = document.querySelector(".name-box");
 let participantes = [];
 
+// BOTÃO ADICIONAR
+
 add.addEventListener("click", (event) => {
   event.preventDefault;
 
   addName();
+
+});
+
+rst.addEventListener("click", (event) => {
+  event.preventDefault;
+
+  restart();
 
 });
 
@@ -36,6 +45,25 @@ function addName() {
   participantes.push(username.value.toUpperCase())
   username.value = '';
 }
+
+// BOTÃO REINICIAR
+
+function restart() {
+  form.reset();
+  listBox.innerText = '';
+  participantes = [];
+}
+
+
+
+
+
+
+
+
+
+
+
 
 function errorInput(input, message) {
   const formItem = input.parentElement;
