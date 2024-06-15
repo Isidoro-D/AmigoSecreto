@@ -16,21 +16,24 @@ add.addEventListener("click", (event) => {
 function addName() {
   let usernameValue = username.value;
 
-
   if (usernameValue === "") {
     errorInput(username, "Preencha com um nome!");
+    return;
 
   } else if (listBox.textContent.length === 0) {
-    listBox.innerText = usernameValue;
+    listBox.innerText = username.value.toUpperCase();
 
-/*  } else if (usernameValue === listBox.textContent) {
-    errorInput(username, "Já colocaram esse nome!"); */
+                  //quando você não coloca comparativo, ela entende como se estivesse verificando como "true", se eu quisesse como "false" eu colocaria no inicio um "!"
+  } else if ( participantes.includes(username.value.toUpperCase()))  {
+    errorInput(username, "Já colocaram esse nome!");
+    return;
+
   } else {
-    listBox.innerText += ', ' + usernameValue;
+    listBox.innerText += ', ' + username.value.toUpperCase();
     const formItem = username.parentElement
     formItem.classList = "name";
-  } 
-  participantes.push(username.value)
+  }
+  participantes.push(username.value.toUpperCase())
   username.value = '';
 }
 
