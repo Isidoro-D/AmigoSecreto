@@ -135,9 +135,10 @@ input {
 
 .name-box {
     width: 25vw;
-    height: 6vh;
+    min-height: 6vh;
     margin: 0 auto;
     font-size: 1.15rem;
+    background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid var(--deep-saffron);
 }
 
@@ -165,6 +166,8 @@ input {
     border: 1px solid var(--deep-saffron);
     margin: 0 auto;
     width: 25vw;
+    min-height: 15vh;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .list_sweepstakes li {
