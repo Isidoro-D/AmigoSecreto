@@ -4,27 +4,24 @@ const srt = document.querySelector(".srt");
 const rst = document.querySelector(".rst");
 const username = document.querySelector(".name");
 const listBox = document.querySelector(".name-box");
-const list = document.querySelector(".names");
+const list = document.querySelector(".list_sweepstakes");
 let participantes = [];
 
 // BOTÃO ADICIONAR
 
-add.addEventListener("click", (event) => {
-  event.preventDefault;
+add.addEventListener("click", () => {
 
   addName();
 
 });
 
-rst.addEventListener("click", (event) => {
-  event.preventDefault;
+rst.addEventListener("click", () => {
 
   restart();
 
 });
 
-srt.addEventListener("click", (event) => {
-  event.preventDefault;
+srt.addEventListener("click", () => {
 
   prizes();
 
@@ -70,24 +67,21 @@ function prizes() {
     errorInput(username,'Adicione ao menos 4 participantes!');
     return;
   }
-
-  /* for (let i = 0; i < participantes.length; i++) {
+  list.innerHTML= '';
+  random(participantes);
+  for (let i = 0; i < participantes.length; i++) {
     if (i == participantes.length - 1) {
-      list.innerHTML = list.innerHTML + '<li>' + participantes[i] + '-->' + participantes[0] + '</li>'
+      list.innerHTML = list.innerHTML + '<li>' + participantes[i] + ' --> ' + participantes[0] + '</li>';
     } else {
-      list.innerHTML = list.innerHTML + '<li>' + participantes[i] + '-->' + participantes[i + 1] + '</li>'
+      list.innerHTML = list.innerHTML + '<li>' + participantes[i] + ' --> ' + participantes[i + 1] + '</li>';
     }
-  } */
-  random();
+  }
+
 }
 
-function random() {
-  let sorteio = participantes.sort(() => Math.random() - 0.5);
-  list.innerText = sorteio;
+function random(lista) {
+  lista.sort(() => Math.random() - 0.5);
 }
-
-
-
 
 
 

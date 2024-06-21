@@ -1,0 +1,27 @@
+
+.icon ion-icon {
+    display: none;
+}
+
+.sweepstakes {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 60%;
+    margin: 30px auto;
+}
+
+.buttons {
+    flex-direction: column;
+}
+
+.name, .name-box {
+    width: 60%;
+}
+
+.list_sweepstakes {
+    width: 60%;
+    min-height: 150px;
+}
